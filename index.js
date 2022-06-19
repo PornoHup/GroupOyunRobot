@@ -143,7 +143,7 @@ const getRoundMessage = (chatId, round, time) => {
 📌 Şəkil Dəki Şəxsin Yaşını Tapmın.
 ⏱️ Vaxt 20 Saniyyə
 
-🪐Rəsmi Qrup: @BanditosQrup
+🪐Rəsmi Qrup: @KarabakhTeamm
 
 		${answers.length > 0 ? `\n${answers.map((member, index) => `${index + 1}. *${member.firstName}*: ${member.answer}`).join("\n")}\n` : ""}
 		${"⬛".repeat(time)}${"⬜".repeat(config.timerSteps - time)}
