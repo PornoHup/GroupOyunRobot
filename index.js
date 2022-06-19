@@ -260,7 +260,7 @@ bot.command("game", ctx => {
 		} else {
 			createChat(chatId)
 		}
-		ctx.replyWithMarkdown("💎 Təxmin Oyunu Başlayır Hər Birinizə Uğurlar. 💎")
+		ctx.replyWithMarkdown("😊Təxmin Oyunu Başlayır Hər Birinizə Uğurlar. 🥂🤝")
 		startGame(ctx, chatId)
 	} else {
 		ctx.reply("😑 Bu Əmr Qruplar Üçün Təyin Olunub 😑")
@@ -376,7 +376,7 @@ bot.command("chart", ctx => {
 
 			${topSlice.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${fromId === member.id ? "Sənin Xal: " : ""}${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "⚡xal", "⚡xal", "⚡xal")}`).join("\n")}
 			${currentUser ? `...\n🔸 ${currentUser.index + 1}. ${bold(currentUser.firstName)}: ${numberWithSpaces(currentUser.score)} ${pluralize(currentUser.score, "⚡xal", "⚡xal", "⚡xal")}\n` : ""}
-			❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @KarabakhTeamm
+			❤️🐊 Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @KarabakhTeamm
 			🔄 /game - Bir daha?
 		`)
 		)
