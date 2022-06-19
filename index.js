@@ -19,7 +19,7 @@ const createGameState = chatId => {
 }
 const getGreetMessage = isGroup =>
 	trueTrim(`
-	👋 Salam. Mən @BanditosQrup üçün yaradılmış, Yaş təxmin Oyun Botuyam.🤖
+	👋 Salam. Mən @KarabakhTeamm üçün yaradılmış, Yaş təxmin Oyun Botuyam.🤖
 
 	📋 Qaydalar: Mən sizə bir şəxsin şəklini atıram və sizin vəzifəniz onun yaşını təxmin etməkdir.  Nə qədər dəqiq cavab versəniz, bir o qədər xal qazanacaqsınız.⭐
 	
@@ -32,8 +32,8 @@ const getGreetMessage = isGroup =>
 	/top - 🔝 Qrup Oyunçu Xalları
 	/chart - 🌎 Qlobal Reyting
 	
-	🧑‍💻 Owner: @HusuSovetski 🇦🇿
-🇦🇿 Rəsmi Qrup: @BanditosQrup
+	🧑‍💻 Owner: @Thagiyevvvv 🐊
+🇦🇿 Rəsmi Qrup: @KarabakhTeamm
 `)
 const getRandomPerson = () => {
 	let imagePath = "./photos"
@@ -211,7 +211,7 @@ const startGame = (ctx, chatId) => {
 					}
 				)
 			} else {
-				ctx.reply(" Mənim lə Oynamadığın Üçün Oyunu Sonlandırdım ❌ .")
+				ctx.reply(" Mənimlə Oynamadığın Üçün Oyunu Sonlandırdım ❌ .")
 				stopGame(ctx, chatId)
 				return
 			}
@@ -248,7 +248,7 @@ bot.command("game", ctx => {
 		let chat = getChat(chatId)
 		if (chat) {
 			if (chat.isPlaying) {
-				return ctx.reply("🆘 Hal Hazırda Yarımçıq Oyununuz Var /Stop Əmriylə Sonlandıra Bilərsiniz. 🆘")
+				return ctx.reply("😐 Hal Hazırda Yarımçıq Oyununuz Var /Stop Əmriylə Sonlandıra Bilərsiniz. 🚫")
 			} else {
 				chat.isPlaying = true
 				for (let key in chat.members) {
@@ -263,7 +263,7 @@ bot.command("game", ctx => {
 		ctx.replyWithMarkdown("💎 Təxmin Oyunu Başlayır Hər Birinizə Uğurlar. 💎")
 		startGame(ctx, chatId)
 	} else {
-		ctx.reply("🆘 Bu Əmr Qruplar Üçün Təyin Olunub 🆘")
+		ctx.reply("😑 Bu Əmr Qruplar Üçün Təyin Olunub 😑")
 	}
 })
 
@@ -280,7 +280,7 @@ bot.command("stop", ctx => {
 bot.command("alive", ctx => {
 	return ctx.replyWithMarkdown(
 		trueTrim(`
-  Mən İşləyirəm Botda Yaşanacaq Hadisəni Sahibimə Bildirin. @HusuSovetski
+  Mən İşləyirəm Botda Yaranacaq Xətaları Sahibimə Bildirin. @Thagiyevvvv
 		`)
 	)
 })
@@ -372,11 +372,11 @@ bot.command("chart", ctx => {
 			trueTrim(`
 			*🌎 Qlobal Oyunçuların Reytingi.:*
 			
-			*⚜️ Hamınıza uğurlar. ⚡*
+			*🤝 Hamınıza uğurlar. ⚡*
 
 			${topSlice.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${fromId === member.id ? "Sənin Xal: " : ""}${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "⚡xal", "⚡xal", "⚡xal")}`).join("\n")}
 			${currentUser ? `...\n🔸 ${currentUser.index + 1}. ${bold(currentUser.firstName)}: ${numberWithSpaces(currentUser.score)} ${pluralize(currentUser.score, "⚡xal", "⚡xal", "⚡xal")}\n` : ""}
-			❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @Banditosqrup
+			❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @KarabakhTeamm
 			🔄 /game - Bir daha?
 		`)
 		)
