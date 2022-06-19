@@ -105,7 +105,7 @@ const stopGame = (ctx, chatId) => {
 						.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "⚡xal", "⚡xal", "⚡xal")}`)
 						.join("\n")}
 
-					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @Banditosqrup
+					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @KarabakhTeamm
 					🔄 /game - Bir daha?
 				`)
 			)
