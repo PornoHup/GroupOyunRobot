@@ -114,7 +114,7 @@ const stopGame = (ctx, chatId) => {
 				trueTrim(`
 					*🏁 Oyun Oynamadığınız Üçün Qalib Yoxdur. .*
 
-					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @Banditosqrup
+					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @KarabakhTeamm
 					🔄 /game - Bir daha?
 				`)
 			)
